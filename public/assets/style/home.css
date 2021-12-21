@@ -1,0 +1,150 @@
+
+/*INICIO*/
+.home-img{
+    background-image: url("../images/12.jpg");
+    width:100%;
+    height: 650px;
+    background-repeat: no-repeat;
+    background-size:cover
+}
+
+.home-animals{
+    background:#1a1a1a;
+}
+
+
+/*CARDS*/
+
+.home-card-animals-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    overflow-x: auto;
+    overflow-y:hidden;
+    margin:auto;
+    flex-wrap: wrap;
+}
+
+.home-card-animals{
+    width:380px;
+    padding:10px;
+    color:white;
+    word-wrap: break-word;
+    margin:10px;
+}
+
+.home-card-animals img{
+    max-width:100%;
+    max-height:30%;
+    border-radius:10px;
+    box-shadow:25px 25px 100px #000;
+    margin-top:-120px;
+    position:absolute;
+ 
+}
+
+.home-card-text{
+    margin-top:100px;
+}
+
+.home-card-text p button{
+    padding:8px;
+    border-radius:5px;
+    cursor:pointer;
+    margin:auto;
+}
+
+.info-container{
+    width:80%;
+    margin:auto;
+    color:#ebebeb;
+    background-color: #212121;
+    padding:15px;
+}
+
+.sobre,.missao,.visao{
+    margin-top:15px;
+    text-align: justify;
+    line-height: 30px;
+}
+
+.home-cover{
+    width:100%;
+    height:100%;
+    position: relative;
+    background-color: rgba(0,0,0,.8);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    word-wrap: break-word;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.home-cover>h3{
+    color:#ebebeb;
+    font-size: 50px;
+}
+
+/*pseodo codes*/
+@media screen and (min-width:991px){
+    .home-card-animals-container::-webkit-scrollbar{
+        height:8px;
+        background:rgba(0,0,0,.6);
+    }
+
+    .home-card-animals-container::-webkit-scrollbar-thumb{
+        background:#e8850e;
+        border-radius:10px;
+    }
+}
+
+.home-cover:hover{
+    opacity:1;
+}
+/*mobile*/
+
+
+@media screen and (max-width:767px){
+    .home-img{
+        height:300px
+    }
+ 
+    .home-card-text{
+        margin-top:5px;
+    }
+
+    .info-container{
+        width:95%;
+        padding:8px;
+    }
+    .home-cover{
+        display: none;
+    }
+   
+}
+
+@media screen and (max-width:991px){
+    .home-card-animals img{
+        margin-top:10px;
+        position:relative;
+        max-height:90%;
+    }
+    .home-cover{
+        display: none;
+    }
+
+}
+
+@media screen and (min-width:768px) and (max-width:1259px){
+    .home-card-animals img{
+        margin-top:10px;
+        position:relative
+    }
+    .home-cover{
+        display: none;
+    }
+}

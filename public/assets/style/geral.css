@@ -1,0 +1,35 @@
+*{
+    padding:0px;
+    margin:0px;
+    font-family: sans-serif;
+}
+
+body{
+    overflow-x:hidden;
+}
+
+.more{
+    padding:6px;
+    border-radius: 5px;
+    width:100px;
+    outline:none;
+    border:none;
+    margin:5px;
+    cursor: pointer;
+    background:#ebebebeb;
+    text-decoration: none;
+    color:#111;
+    text-align: center;
+}
+
+@media screen and (min-width:991px){
+    body::-webkit-scrollbar{
+    width:14px;
+    background-color: white;
+    }
+
+    body::-webkit-scrollbar-thumb{
+        background-color: #e8850e;
+        border-radius:10px;
+    }
+}

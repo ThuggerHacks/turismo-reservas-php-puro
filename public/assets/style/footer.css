@@ -1,0 +1,163 @@
+
+/*geral*/
+footer{
+    background-color:#101010;
+    width:100%;
+    padding:10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container{
+    padding:10px;
+    margin:10px;
+    display: flex;
+    justify-content: center;
+
+}
+
+/*links*/
+
+.footer-nav-ul{
+    text-align: justify;
+}
+.footer-nav-li{
+    margin:10px;
+    color:white;
+    font-family: sans-serif;
+    list-style: none;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+
+}
+
+.footer-link{
+    text-decoration: none;
+    color:white;
+}
+
+.footer-chevron-right{
+    margin:5px;
+    width:25px;
+    height:25px;
+    border-radius:25px;
+    background-color:#2e2e2e;
+    color:#0e0e0e;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size:18px;
+    text-align: center;
+}
+
+
+/*cards*/
+
+.footer-title{
+    color:white;
+    font-family:sans-serif;
+}
+
+.cards{
+    display: flex;
+    align-items: center;
+    
+}
+
+.footer-card-1{
+    margin:10px;
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    color: white;
+}
+
+.footer-card-1 img{
+    border-radius:14px;
+    margin:10px;
+    max-width:40%;
+}
+
+.card-text{
+    line-height: 25px;
+}
+
+/*divider*/
+
+.divider{
+    width:90%;
+    margin:10px auto;
+    border:1px solid #303030;
+    border-radius:100%;
+}
+
+/*footer*/
+
+.footer{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    color:#a1a1a1;
+    font-family: sans-serif;
+    padding:10px;
+    width:100%
+}
+
+.footer div a {
+    text-decoration: none;
+    color:#a1a1a1;
+}
+
+
+/*mobile friendly*/
+
+@media screen and (min-width:991px){
+    .footer-nav{
+        width:60%;
+    }
+}
+
+@media screen and (max-width:991px){
+    .footer-nav-li{
+        /* justify-content: center; */
+        flex-wrap: wrap;
+    }
+    .cards{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .footer-card-1{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .footer{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+  
+
+    .footer-card-1 img{
+        max-width:100%;
+    }
+
+    .footer-container{
+        flex-wrap: wrap;
+        
+    }
+
+    footer{
+        justify-content: center;
+    }
+    .footer-title, .card-text h3{
+        text-align: center;
+    }
+
+    .footer div{
+        margin:5px;
+    }
+
+  
+}
+

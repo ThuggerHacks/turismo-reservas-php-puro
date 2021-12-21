@@ -1,0 +1,83 @@
+.animal-container{
+    background-color: #000;
+    width:100%;
+}
+
+.animal-inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #212121;
+    padding:5px;
+    width:75%;
+    margin:auto;
+    
+}
+
+.animal-card{
+    padding:8px;
+    margin:5px;
+    width:30%;
+    cursor: pointer;
+}
+.animal-card-header>img{
+    border-radius: 16px;
+    max-width: 100%;
+}
+
+.animal-card-body{
+    width:83%;
+    text-align: justify;
+    color:#ebebeb;
+    margin:8px;
+}
+
+.animal-type{
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom:10px;
+    padding:10px;
+    color:#ebebeb;
+}
+/*mobile*/
+
+@media screen and (max-width:767px){
+    .animal-inner{
+        width:100%;
+    }
+    .animal-card{
+        width:90%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .animal-card-body{
+        width:90%;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1100px){
+    .animal-inner{
+        width:100%;
+    }
+    .animal-card{
+        width:45%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .animal-card-body{
+        width:90%;
+    }
+}
+
+@media screen and (min-width:768px){
+    .animal-card-header  img{
+        width:280px;
+        height:200px;
+    }
+}

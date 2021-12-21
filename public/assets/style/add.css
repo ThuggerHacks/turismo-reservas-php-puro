@@ -1,0 +1,56 @@
+.add-container{
+    background-color: #0f0f0f;
+    padding:10px;
+    color:#ebebeb;
+}
+
+.add-form{
+    width:50%;
+    margin:10px auto;
+    border-top:1px solid #ebebeb;
+    border-bottom:1px solid #ebebeb;
+    border-left:1px solid #ebebebeb;
+    padding:10px;
+}
+
+.dv{
+    display: flex !important;
+    flex-wrap: wrap;
+    width:100%;
+}
+
+.dv{
+    display:flex;
+}
+.flex-1,.flex-2{
+    width:50%;
+}
+input,select{
+    padding:6px;
+    border:1px solid #ebebebeb;
+    border-radius:5px;
+    margin:3px;
+    outline: none;
+    width:50%;
+    cursor: pointer;
+    transition: border 1s;
+    
+}
+.btnsend{
+    padding:5px;
+    border-radius:3px;
+    outline:none;
+    border:0px;
+    margin:10px;
+    width:100px;
+}
+input:hover, select:hover{
+    border:1px solid darkcyan;
+}
+
+@media screen and (max-width:767px){
+    .add-form{
+        width:100%;
+        border:none
+    }
+}

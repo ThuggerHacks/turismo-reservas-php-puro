@@ -1,0 +1,79 @@
+.feedback-container{
+    background-color: #000;
+}
+
+.feedback-area{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    color:#ebebebeb;
+    padding:40px;
+}
+
+.sec-1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width:40%
+}
+
+.location{
+    border-radius:9px;
+    background-image: url(../pictures/images/crop.png);
+    width:320px;
+    height:250px;
+    background-size: cover;
+    cursor: pointer;
+    background-origin: center;
+    transition:background 1s;
+}
+
+.sec-2>form>input,.sec-2>form>textarea{
+    padding:8px;
+    margin:4px;
+    width:100%;
+    border-radius:8px;
+    border:1px solid #ebebebeb;
+    outline:none;
+    background:#101010;
+    color:#ebebebeb;
+}
+
+.sec-2>form>textarea{
+    height:100px
+}
+.feedback-title{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*pseodo*/
+
+.location:hover{
+    background: url(../pictures/images/crop.png) 100% center;
+}
+
+/*mobile*/
+@media screen and (max-width:767px){
+    .feedback-area{
+        padding:5px;
+    }
+    .sec-1{
+        width:70%;
+        display: block;
+        margin-left:auto;
+        margin-right:auto;
+        margin-top:15px;
+        margin-bottom:8px;
+    }
+    .sec-2{
+        width:70%;
+        margin-top:10px;
+        margin-bottom:10px;
+    }
+    .location{
+        max-width: 100%;
+    }
+}
+

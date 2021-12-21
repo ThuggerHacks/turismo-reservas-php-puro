@@ -1,0 +1,74 @@
+.more_info_animal{
+    color:#ebebebeb;
+    text-align: justify;
+    width:95%;
+    word-wrap: break-word;
+}
+
+.animal-inner>div{
+    color:white;
+    width:80%;
+    margin:10px auto;
+    line-height: 30px;
+}
+
+.users{
+    overflow: auto;
+    color:white;
+    height:200px;
+    padding:10px;
+}
+
+.users::-webkit-scrollbar{
+    width:6px;
+    background:black;
+}
+
+.users::-webkit-scrollbar-thumb{
+    background:#e8850e;
+}
+
+table{
+
+    width:100%;
+    padding:3px;
+    text-align: center;
+    border-spacing: 0px;
+}
+
+table tr td, table tr th{
+    border:1px solid #ebebeb;
+}
+
+h2{
+    background-color: #e8850e;
+    margin-top:10px;
+    margin-bottom:0px;
+    padding-bottom:0px;
+}
+
+.galery-area{
+    background:#0f0f0f0f;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.animal-card-header>img{
+    border-radius:2px;
+}
+@media screen and (max-width:767px){
+    .users{
+        padding:4px;
+
+    }
+    
+}
+
+@media screen and (min-width:768px){
+    .galery-area div img{
+        width:280px;
+        height:280px;
+    }
+}
